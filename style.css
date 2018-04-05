@@ -1,0 +1,25 @@
+.content_titre{
+    margin-bottom: 5%;
+}
+
+.id_card{
+    border:2px red solid;
+    padding:3%;
+    position:relative;
+}
+
+.id_card > ul {
+    list-style-type: none;
+    position:relative;
+    left:1px;
+}
+
+.choose_perso{
+    border:2px blue solid;
+}
+
+.avatar_perso{
+    height: 75%;
+    width: 75%;
+    border:2px red solid;
+}
