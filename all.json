@@ -2777,7 +2777,6 @@
       "base": "21st Century Gotham City"
     },
     "connections": {
-
       "groupAffiliation": "Batman Family, Justice League Unlimited",
       "relatives": "Bruce Wayne (biological father), Warren McGinnis (father, deceased), Mary McGinnis (mother), Matt McGinnis (brother)"
     },
@@ -10310,7 +10309,10 @@
       "lg": "https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/lg/263-flash.jpg"
     }
   },
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5fe5602825722fa5061b1fe93612d3b20c0c3fa9
   {
     "id": 265,
     "name": "Flash II",
@@ -13500,8 +13502,12 @@
     "images": {
       "xs": "https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/xs/346-iron-man.jpg",
       "sm": "https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/346-iron-man.jpg",
+<<<<<<< HEAD
       "md": "https://cdn.rawgit.com/a
       kabab/superhero-api/0.2.0/api/images/md/346-iron-man.jpg",
+=======
+      "md": "https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/346-iron-man.jpg",
+>>>>>>> 5fe5602825722fa5061b1fe93612d3b20c0c3fa9
       "lg": "https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/lg/346-iron-man.jpg"
     }
   },
@@ -16707,8 +16713,12 @@
     },
     "connections": {
       "groupAffiliation": "Alliance to Restore the Republic, Jedi Order, Alliance of Free Planets, Bright Tree Village, New Republic, New Jedi Order",
+<<<<<<< HEAD
       "relatives": "Darth Vader (father), Princes Leia (Sister), Yoda (Master), Obi-Wan
        (Master)"
+=======
+      "relatives": "Darth Vader (father), Princes Leia (Sister), Yoda (Master), Obi-Wan Kenobi (Master)"
+>>>>>>> 5fe5602825722fa5061b1fe93612d3b20c0c3fa9
     },
     "images": {
       "xs": "https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/xs/418-luke-skywalker.jpg",
@@ -28303,7 +28313,10 @@
       "groupAffiliation": "Phalanx; formerly Sons of Yinsen, Lethal Legion, Masters of Evil",
       "relatives": "Hank Pym (Yellowjacket, creator, \"father\"), Janet Van Dyne (Wasp, regarded by Ultron as \"mother\" due to marriage to Pym), Jocasta (creation, former mate), Alkhema (creation, former mate, deactivated), Vision (creation, \"son\"), Victor Mancha (creation, son), Rex (creation, pet, deactivated), Robos & Bio-Synthezoids (creations of Alkhema, \"grandchildren\";, destroyed); Simon Williams (Wonder Man), Eric Williams (Grim Reaper) & Wanda Maximoff (Scarlet Witch), all regarded by Ultron as part of his \"extended family\" due to their familial connections with the Vision"
     },
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5fe5602825722fa5061b1fe93612d3b20c0c3fa9
     "images": {
       "xs": "https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/xs/680-ultron.jpg",
       "sm": "https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/680-ultron.jpg",
@@ -30284,4 +30297,8 @@
       "lg": "https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/lg/731-zoom.jpg"
     }
   }
+<<<<<<< HEAD
 ]
+=======
+]
+>>>>>>> 5fe5602825722fa5061b1fe93612d3b20c0c3fa9
