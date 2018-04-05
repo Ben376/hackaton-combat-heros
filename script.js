@@ -6,6 +6,7 @@ const showhero = (myId) =>{
 
     req.onreadystatechange = function(){
         if (req.readyState === 4 && req.status === 200){
+            let id_joueur = myId;
             const json = JSON.parse(this.responseText);
             document.getElementById('Name').innerHTML = json.name;
             document.getElementById('Genre').innerHTML = json.appearance.gender;
@@ -25,11 +26,51 @@ const showhero = (myId) =>{
 };
 
 
-const validPerso = () => {
+const validPerso1 = () => {
     if (!document.getElementById('Name').innerHTML){
         alert("Merci de choisir un personnage")
     }
     else{
+    let perso1 = {
+            name : document.getElementById('Name').innerHTML,
+            Genre : document.getElementById('Genre').innerHTML,
+            Race : document.getElementById('Race').innerHTML,
+            Taille : document.getElementById('Taille').innerHTML,
+            Poids : document.getElementById('Poids').innerHTML,
+            Intelligence : document.getElementById('Intelligence').innerHTML,
+            Force : document.getElementById('Force').innerHTML,
+            Vitesse : document.getElementById('Vitesse').innerHTML,
+            Endurence : document.getElementById('Endurence').innerHTML,
+            Puissance : document.getElementById('Puissance').innerHTML,
+            Attaque : document.getElementById('Attaque').innerHTML,
+        }
+        console.log(perso1)
+        alert("Votre choix est validé")
+    }
+
+}
+
+
+
+const validPerso2 = () => {
+    if (!document.getElementById('Name').innerHTML){
+        alert("Merci de choisir un personnage")
+    }
+    else{
+    let perso1 = {
+            name : document.getElementById('Name').innerHTML,
+            Genre : document.getElementById('Genre').innerHTML,
+            Race : document.getElementById('Race').innerHTML,
+            Taille : document.getElementById('Taille').innerHTML,
+            Poids : document.getElementById('Poids').innerHTML,
+            Intelligence : document.getElementById('Intelligence').innerHTML,
+            Force : document.getElementById('Force').innerHTML,
+            Vitesse : document.getElementById('Vitesse').innerHTML,
+            Endurence : document.getElementById('Endurence').innerHTML,
+            Puissance : document.getElementById('Puissance').innerHTML,
+            Attaque : document.getElementById('Attaque').innerHTML,
+        }
+        console.log(perso1)
         alert("Votre choix est validé")
     }
 
