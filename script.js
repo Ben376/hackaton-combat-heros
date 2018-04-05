@@ -27,6 +27,7 @@ const showhero = (myId) =>{
 
 
 const validPerso1 = () => {
+    let bouton = document.getElementById("bouton_j1");
     if (!document.getElementById('Name').innerHTML){
         alert("Merci de choisir un personnage")
     }
@@ -45,6 +46,7 @@ const validPerso1 = () => {
             Attaque : document.getElementById('Attaque').innerHTML,
         }
         console.log(perso1)
+        bouton.style.display = "none"
         alert("Votre choix est validé")
     }
 
@@ -53,11 +55,12 @@ const validPerso1 = () => {
 
 
 const validPerso2 = () => {
+    let bouton = document.getElementById("bouton_j2");
     if (!document.getElementById('Name').innerHTML){
         alert("Merci de choisir un personnage")
     }
     else{
-    let perso1 = {
+    let perso2 = {
             name : document.getElementById('Name').innerHTML,
             Genre : document.getElementById('Genre').innerHTML,
             Race : document.getElementById('Race').innerHTML,
@@ -70,7 +73,8 @@ const validPerso2 = () => {
             Puissance : document.getElementById('Puissance').innerHTML,
             Attaque : document.getElementById('Attaque').innerHTML,
         }
-        console.log(perso1)
+        console.log(perso2)
+        bouton.style.display = "none"
         alert("Votre choix est validé")
     }
 
