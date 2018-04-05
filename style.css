@@ -3,7 +3,6 @@
 }
 
 .id_card{
-    border:2px red solid;
     padding:3%;
     position:relative;
 }
@@ -14,12 +13,22 @@
     left:1px;
 }
 
-.choose_perso{
-    border:2px blue solid;
-}
-
 .avatar_perso{
     height: 75%;
     width: 75%;
-    border:2px red solid;
+    border:2px black solid;
+}
+
+.valid_fight{
+    position:relative;
+}
+
+.bouton_fight{
+    position:relative;
+    top:30%;
+}
+
+.valid_fight, .valid_player{
+    margin-top: 5%;
+    text-align: center;
 }
