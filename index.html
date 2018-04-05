@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" charset="utf-8"></script>
     <title>Le site de FOU !!! </title>
 </head>
 <body>
@@ -80,7 +81,7 @@
         <div class="row">
             <div class="col-lg-2 offset-lg-1 valid_player">
                 <h2> Joueur 1 </h2>
-                <button type="button" class="btn btn-primary">Validez votre choix</button>
+                <button type="button" class="btn btn-primary" onclick=validPerso()>Validez votre choix</button>
             </div>
             <div class="col-lg-2 offset-lg-1 valid_player">
                 <h2> Joueur 2 </h2>
@@ -92,32 +93,7 @@
         </div>
     </div>
 
-    <script type="text/javascript">
-    const showhero = (myId) =>{
-        const req = new XMLHttpRequest();
-        let url = "https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/id/" + myId + ".json";
 
-        req.onreadystatechange = function(){
-            if (req.readyState === 4 && req.status === 200){
-                const json = JSON.parse(this.responseText);
-                document.getElementById('Name').innerHTML = json.name;
-                document.getElementById('Genre').innerHTML = json.appearance.gender;
-                document.getElementById('Race').innerHTML = json.appearance.race;
-                document.getElementById('Taille').innerHTML = json.appearance.height[1];
-                document.getElementById('Poids').innerHTML = json.appearance.weight[1];
-                document.getElementById('Intelligence').innerHTML = json.powerstats.intelligence;
-                document.getElementById('Force').innerHTML = json.powerstats.strength;
-                document.getElementById('Vitesse').innerHTML = json.powerstats.speed;
-                document.getElementById('Endurence').innerHTML = json.powerstats.durability;
-                document.getElementById('Puissance').innerHTML = json.powerstats.power;
-                document.getElementById('Attaque').innerHTML = json.powerstats.combat;
-            }
-        }
-        req.open('GET', url, true);
-        req.send();
-    }
-
-    </script>
 
 
 
