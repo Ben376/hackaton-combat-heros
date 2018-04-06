@@ -36,3 +36,7 @@
 .avatar_perso{
     text-align: center;
 }
+
+#id{
+    display:none;
+}
