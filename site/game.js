@@ -52,3 +52,59 @@ const joueur2 = (id) => {
     req.send();
 };
 joueur2(id2)
+
+
+
+const attack1 = () => {
+    let attaquant = document.getElementById('Namej1').innerHTML;
+    let victime = document.getElementById('Namej2').innerHTML;
+    let name_attaque = document.getElementById('attack1').innerHTML;
+    let sentence = document.getElementById('sentence-fight');
+    sentence.style.display = "block";
+    document.getElementById("content-fight").innerHTML = attaquant + " attaque " + victime + " avec " + name_attaque;
+}
+
+const attack2 = () => {
+    let attaquant = document.getElementById('Namej1').innerHTML;
+    let victime = document.getElementById('Namej2').innerHTML;
+    let name_attaque = document.getElementById('attack2').innerHTML;
+    let sentence = document.getElementById('sentence-fight');
+    sentence.style.display = "block";
+    document.getElementById("content-fight").innerHTML = attaquant + " attaque " + victime + " avec " + name_attaque;
+}
+const attack3 = () => {
+    let attaquant = document.getElementById('Namej1').innerHTML;
+    let victime = document.getElementById('Namej2').innerHTML;
+    let name_attaque = document.getElementById('attack3').innerHTML;
+    let sentence = document.getElementById('sentence-fight');
+    sentence.style.display = "block";
+    document.getElementById("content-fight").innerHTML = attaquant + " attaque " + victime + " avec " + name_attaque;
+}
+
+
+const attack4 = () => {
+    let attaquant = document.getElementById('Namej2').innerHTML;
+    let victime = document.getElementById('Namej1').innerHTML;
+    let name_attaque = document.getElementById('attack4').innerHTML;
+    let sentence = document.getElementById('sentence-fight');
+    sentence.style.display = "block";
+    document.getElementById("content-fight").innerHTML = attaquant + " attaque " + victime + " avec " + name_attaque;
+}
+
+const attack5 = () => {
+    let attaquant = document.getElementById('Namej2').innerHTML;
+    let victime = document.getElementById('Namej1').innerHTML;
+    let name_attaque = document.getElementById('attack5').innerHTML;
+    let sentence = document.getElementById('sentence-fight');
+    sentence.style.display = "block";
+    document.getElementById("content-fight").innerHTML = attaquant + " attaque " + victime + " avec " + name_attaque;
+}
+
+const attack6 = () => {
+    let attaquant = document.getElementById('Namej2').innerHTML;
+    let victime = document.getElementById('Namej1').innerHTML;
+    let name_attaque = document.getElementById('attack6').innerHTML;
+    let sentence = document.getElementById('sentence-fight');
+    sentence.style.display = "block";
+    document.getElementById("content-fight").innerHTML = attaquant + " attaque " + victime + " avec " + name_attaque;
+}
