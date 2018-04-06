@@ -31,6 +31,7 @@ const joueur1 = (id) => {
 joueur1(id1)
 
 
+
 const joueur2 = (id) => {
     const req = new XMLHttpRequest();
     let url = "https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/id/" + id + ".json";
@@ -53,13 +54,27 @@ const joueur2 = (id) => {
 };
 joueur2(id2)
 
-
+let puissanceAttaque = 0;
 
 const attack1 = () => {
     let attaquant = document.getElementById('Namej1').innerHTML;
     let victime = document.getElementById('Namej2').innerHTML;
     let name_attaque = document.getElementById('attack1').innerHTML;
     let sentence = document.getElementById('sentence-fight');
+    puissanceAttaque = Math.round(Math.random() * (Math.round(attaquant.Force/6)));
+    if (attaquant.Force > victime.Force) {
+      victime.Endurence -= puissanceAttaque * 4;
+      return(`${attaquant.name} attaque ${victime.name} et inflige ${puissanceAttaque * 4} points de dégâts`);
+      return(`Il reste ${Math.round(victime.Endurence)} points d'endurance à ${victime.name}`);
+    } else if (victime.Force < attaquant.Force) {
+      victime.Endurence -= puissanceAttaque;
+      return(`${attaquant.name} attaque ${victime.name} et inflige ${puissanceAttaque} points de dégâts`);
+      return(`Il reste ${Math.round(victime.Endurence)} points d'endurance à ${victime.name}`);
+    } else {
+      victime.Endurence -= puissanceAttaque/2;
+      return(`${attaquant.name} attaque ${victime.name} et inflige ${puissanceAttaque/2} points de dégâts`);
+      return(`Il reste ${Math.round(victime.Endurence)} points d'endurance à ${victime.name}`);
+    }
     sentence.style.display = "block";
     document.getElementById("content-fight").innerHTML = attaquant + " attaque " + victime + " avec " + name_attaque;
 }
@@ -107,4 +122,18 @@ const attack6 = () => {
     let sentence = document.getElementById('sentence-fight');
     sentence.style.display = "block";
     document.getElementById("content-fight").innerHTML = attaquant + " attaque " + victime + " avec " + name_attaque;
+}
+
+
+
+let isAlive = (perso) => {
+  if (perso.Endurence > 0) {
+    perso.KO = false;
+  } else {
+    perso.KO = true;
+  }
+  if (perso.KO == true) {
+    return(`${perso.name} est K.O, le combat est terminé !`);
+    //rediriger les joueurs sur la page de sélection des persos
+  }
 }
