@@ -23,7 +23,6 @@ html, body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  border:2px red solid;
   height: 50%;
   min-height: 9em;
   font-size: 2em;
@@ -43,7 +42,6 @@ html, body {
 .test{
   margin-bottom: 1em;
   text-align: left;
-  border:2px red solid;
   position: relative;
   text-align: center;
   top: 30%;
@@ -52,7 +50,6 @@ html, body {
 
 
 .listing{
-    border:2px red solid;
     display:flex;
 }
 
@@ -155,23 +152,19 @@ li{
 }
 
 .attaquer{
-    border:2px green solid;
     margin-top: 160%;
 }
 
 .logo_joueur{
-    border:2px red solid;
     width:70%;
 }
 
 .content_logo_stats{
-  border:2px blue solid;
   display:flex;
   justify-content: space-around;
 }
 
 #content-fight{
-    border:2px red solid;
     font-size: 18px;
     color:red;
     font-weight: bold;

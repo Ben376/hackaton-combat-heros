@@ -24,7 +24,7 @@ const showhero = (myId) => {
     req.send();
 };
 
-
+let player1 = null;
 const validPerso1 = () => {
         let bouton = document.getElementById("bouton_j1");
         if (!document.getElementById('Name').innerHTML) {
@@ -45,6 +45,7 @@ const validPerso1 = () => {
                 Puissance: document.getElementById('Puissance').innerHTML,
                 Attaque: document.getElementById('Attaque').innerHTML,
         }
+            player1 = perso1;
             bouton.style.display = "none"
             console.log(perso1);
             alert("Vous avez choisi " + perso1.name)
@@ -52,7 +53,7 @@ const validPerso1 = () => {
         }
     }
 
-
+    let player2 = null;
         const validPerso2 = () => {
             let bouton = document.getElementById("bouton_j2");
             if (!document.getElementById('Name').innerHTML) {
@@ -73,6 +74,7 @@ const validPerso1 = () => {
                     Attaque: document.getElementById('Attaque').innerHTML,
 
             }
+                player2 = perso2;
                 console.log(perso2)
                 bouton.style.display = "none"
                 alert("Vous avez choisi " + perso2.name)
@@ -80,11 +82,13 @@ const validPerso1 = () => {
             }
         }
 
-
+const goTo= () => {
+    window.location.href = `site/game.html?${player1.id}?${player2.id}`
+}
 
         /* Script suivant de la deuxième page */
 
-
+/*
 
         class player {
            constructor (name, speed, power, strength, intelligence,durability) {
@@ -121,7 +125,7 @@ const validPerso1 = () => {
         }, 2000)
 
 
-
+*/
 
 
 
