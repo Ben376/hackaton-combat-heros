@@ -22,7 +22,7 @@ const joueur1 = (id) => {
             document.getElementById('Endurence1').innerHTML = json.powerstats.durability;
             document.getElementById('Puissance1').innerHTML = json.powerstats.power;
             document.getElementById('Attaque1').innerHTML = json.powerstats.combat;
-            document.getElementById('url_logo1').innerHTML = json.images
+            document.getElementById('logo1').src = json.images.lg
             }
     }
     req.open('GET', url, true);
@@ -45,6 +45,7 @@ const joueur2 = (id) => {
             document.getElementById('Endurence2').innerHTML = json.powerstats.durability;
             document.getElementById('Puissance2').innerHTML = json.powerstats.power;
             document.getElementById('Attaque2').innerHTML = json.powerstats.combat;
+            document.getElementById('logo2').src = json.images.lg
             }
     }
     req.open('GET', url, true);
