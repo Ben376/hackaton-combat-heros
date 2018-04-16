@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Le site de FOU !!!</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="style-game.css"/>
+<script src="game.js" charset="utf-8"></script>
+</head>
+<body>
+
+
+<div class='split-pane col-xs-12 col-sm-6 uiux-side'>
+        <h2 id="Namej1"></h2>
+        <progress id="healthJ1" value="100" max="100"></progress>
+        <div class="content_logo_stats">
+            <div class="logo_joueur">
+                <img id="logo1" alt="Photo du hero"></img>
+            </div>
+            <div>
+                <div class='test'>
+                    <div class="bold">Caractéristiques</div>
+                    <ul>
+                        <li> Intelligence : <p id ="Intelligence1"></p></li>
+                        <li> Force : <p id ="Force1"></p></li>
+                        <li> Vitesse : <p id ="Vitesse1"></p></li>
+                        <li> Endurence : <p id ="Endurence1"></p></li>
+                        <li> Puissance : <p id ="Puissance1"></p></li>
+                        <li> Attaque : <p id ="Attaque1"></p></li>
+                    </ul>
+                    <div class="attaquer">
+                        <div class="dropup">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Action de combat !!
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <li onclick="attaquePuissante()" id="attack1" class="tooltip-right" data-tooltip="Une attaque basée sur la force du personnage">Attaque Puissante</li>
+                                <li onclick="attaqueSournoise()" id="attack2" class="tooltip-right" data-tooltip="Une attaque basée sur l'intelligence du personnage">Attaque Psychique</li>
+                                <li onclick="attaqueRapide()" id="attack3" class="tooltip-right" data-tooltip="Une attaque basée sur la rapidité du personnage">Attaque Rapide</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+<div class='split-pane col-xs-12 col-sm-6 frontend-side'>
+    <h2 id="Namej2"></h2>
+    <progress id="healthJ2" value="100" max="100"></progress>
+    <div class="content_logo_stats">
+        <div class="logo_joueur">
+            <img id="logo2" alt="Photo du hero"></img>
+        </div>
+        <div>
+            <div class='toto'>
+                <div class="bold">Caractéristiques</div>
+                <ul>
+                    <li> Intelligence : <p id ="Intelligence2"></p></li>
+                    <li> Force : <p id ="Force2"></p></li>
+                    <li> Vitesse : <p id ="Vitesse2"></p></li>
+                    <li> Endurence : <p id ="Endurence2"></p></li>
+                    <li> Puissance : <p id ="Puissance2"></p></li>
+                    <li> Attaque : <p id ="Attaque2"></p></li>
+                </ul>
+                <div class="attaquer">
+                    <div class="dropup">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Action de combat !!
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <li onclick="attaquePuissante1()" id="attack4" class="tooltip-left" data-tooltip="Une attaque basée sur la force du personnage">Attaque Puissante</li>
+                            <li onclick="attaqueSournoise1()" id="attack5" class="tooltip-left" data-tooltip="Une attaque basée sur l'intelligence du personnage">Attaque Psychique</li>
+                            <li onclick="attaqueRapide1()" id="attack6" class="tooltip-left" data-tooltip="Une attaque basée sur la rapidité du personnage">Attaque Rapide</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<div id='split-pane-or'>
+    <div>
+        <img src='../versus.png' alt"versus" class="img_versus">
+    </div>
+    <div id="sentence-fight">
+        <p id="content-fight"> Machin fait une attaque 3 sur Machin et lui prend xx pts de vie </p>
+    </div>
+</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

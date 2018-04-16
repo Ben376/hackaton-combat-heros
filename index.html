@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" charset="utf-8"></script>
+    <title>Le site de FOU !!! </title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 content_titre">
+                <h1> CHOOSE YOUR HERO !</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-lg-2 id_card">
+                <ul>
+                    <li> Nom : <p id="Name"></p> </li>
+                    <li> Genre : <p id="Genre"></p> </li>
+                    <li> Race : <p id="Race"></p></li>
+                    <li> Taille : <p id="Taille"></p></li>
+                    <li> Poids : <p id="Poids"></p></li>
+                    <li id="id"> mon id<p id="myId"></p> </li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-3 id_card">
+                <ul>
+                    <li> Intelligence : <p id="Intelligence"></p></li>
+                    <li> Force :<p id="Force"></p></li>
+                    <li> Vitesse : <p id="Vitesse"></p></li>
+                    <li> Endurence :<p id="Endurence"></p></li>
+                    <li> Puissance : <p id="Puissance"></p></li>
+                    <li> Attaque :<p id="Attaque"></p> </li>
+
+
+                </ul>
+            </div>
+            <div class="col-6 col-lg-7 choose_perso">
+                <table>
+                    <tr>
+                        <td><img src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/620-spider-man.jpg"  class = "avatar_perso" alt="Spiderman" onclick="showhero(620)"></td>
+                        <td><img src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/149-captain-america.jpg"  class = "avatar_perso" alt="Captain America" onclick="showhero(149)"></td>
+                        <td><img src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/680-ultron.jpg"  class = "avatar_perso" alt="Ultron" onclick="showhero(680)"></td>
+                        <td><img src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/687-venom.jpg"  class = "avatar_perso" alt="Venom" onclick="showhero(687)"></td>
+                        <td><img src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/720-wonder-woman.jpg"  class = "avatar_perso" alt="WonderWoman" onclick="showhero(720)"></td>
+                        <td><img src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/717-wolverine.jpg"  class = "avatar_perso" alt="Wolverine" onclick="showhero(717)"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/346-iron-man.jpg"  class = "avatar_perso" alt="IronMan" onclick="showhero(346)"></td>
+                        <td><img src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/370-joker.jpg"  class = "avatar_perso" alt="Joker" onclick="showhero(370)"></td>
+                        <td><img src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/659-thor.jpg"  class = "avatar_perso" alt="Thor" onclick="showhero(659)"></td>
+                        <td><img src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/69-batman.jpg"  class = "avatar_perso" alt="Batman" onclick="showhero(69)"></td>
+                        <td><img src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/561-robin.jpg"  class = "avatar_perso" alt="Robin" onclick="showhero(561)"></td>
+                        <td><img src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/644-superman.jpg"  class = "avatar_perso" alt="Superman" onclick="showhero(644)"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/263-flash.jpg"  class = "avatar_perso" alt="Flash" onclick="showhero(263)"></td>
+                        <td><img src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/630-star-lord.jpg"  class = "avatar_perso" alt="Star Lord" onclick="showhero(630)"></td>
+                        <td><img src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/383-kick-ass.jpg"  class = "avatar_perso" alt="Kick Ass" onclick="showhero(383)"></td>
+                        <td><img src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/404-leonardo.jpg"  class = "avatar_perso" alt="Leonardo" onclick="showhero(404)"></td>
+                        <td><img src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/450-michelangelo.jpg"  class = "avatar_perso" alt="Michelangelo" onclick="showhero(450)"></td>
+                        <td><img src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/228-donatello.jpg"  class = "avatar_perso" alt="Donatello" onclick="showhero(228)"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/541-raphael.jpg"  class = "avatar_perso" alt="Raphael" onclick="showhero(541)"></td>
+                        <td><img src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/418-luke-skywalker.jpg"  class = "avatar_perso" alt="Luke Skywalker" onclick="showhero(418)"></td>
+                        <td><img src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/729-yoda.jpg"  class = "avatar_perso" alt="Yoda" onclick="showhero(729)"></td>
+                        <td><img src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/208-darth-vader.jpg"  class = "avatar_perso" alt="Dark Vador" onclick="showhero(208)"></td>
+                        <td><img src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/207-darth-maul.jpg"  class = "avatar_perso" alt="Dark Maul" onclick="showhero(207)"></td>
+                        <td><img src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/176-chuck-norris.jpg"  class = "avatar_perso" alt="Chuck Norris" onclick="showhero(176)"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container content_valid">
+        <div class="row">
+            <div class="offset-lg-1 col-lg-2 valid_player">
+                <button type="button" class="btn btn-primary" id="bouton_j1" onclick=validPerso1()>Joueur 1</button>
+            </div>
+            <div class="col-lg-2 valid_player">
+                <button type="button" class="btn btn-primary" id="bouton_j2" onclick=validPerso2()>Joueur 2</button>
+            </div>
+            <div class="col-lg-7 valid_fight">
+                <a href="" onclick="goTo()" id="url" target="blank"><button type="button" href=""class="btn btn-danger btn-lg bouton_fight">FIGHT !!</button></a>
+            </div>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

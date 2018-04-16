@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "diabolik";
+  src:  url('diabolik.ttf');
+}
+
+
+body {
+  background-image: url("bg.jpg");
+}
+
+h1 {
+  color: white;
+  font-family: "diabolik";
+	text-align: center;
+  font-size: 5rem;
+  margin: 40px 0 40px 0;
+}
+
+h2, .id_card li {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.id_card p {
+  font-weight: 400;
+}
+
+.content_titre{
+    margin-bottom: 5%;
+}
+
+.id_card{
+    padding:3%;
+    position:relative;
+}
+
+.id_card > ul {
+    list-style-type: none;
+    position:relative;
+    left:1px;
+}
+
+.avatar_perso{
+    height: 75%;
+    width: 75%;
+    box-shadow: 1px 1px 12px black;
+}
+
+.valid_fight{
+    position:relative;
+}
+
+.bouton_fight{
+    position:relative;
+    top:30%;
+}
+
+.valid_fight, .valid_player{
+    margin-top: 5%;
+    padding: 10px;
+    text-align: center;
+}
+
+.avatar_perso{
+    text-align: center;
+}
+
+.valid_player .btn-primary, .valid_fight a {
+  color: white;
+  font-family: "diabolik";
+	text-align: center;
+  font-size: 1.5rem;
+}
+
+#id{
+    display:none;
+}
